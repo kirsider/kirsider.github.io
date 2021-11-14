@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <canvas id="canvas" width="540" height="540"></canvas>
+
+        <div class='winner-container'>
+            <button onclick="runWheel()">Spin!</button>
+            <div class='winner-label'>Winner:</div>
+            <div id='winner'> </div>
+        </div>
+        
+        <div class='options-container'>
+            <div class='add-option-container'>
+                <input id='optionname' type="text" placeholder="option name">
+                <input id='optionamount' type="number" placeholder="initial amount">
+                <button onclick="onAddBtnClick()">Add</button>
+            </div>
+
+            <ul class="option-list" id='option-list'></ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+canvas {
+    border: 2px solid rgba(200, 200, 200, 0.5);
+    margin: 10px 20px;
+}
+
+button {
+    font-size: 24px;
+    min-width: 36px;
+}
+
+input[type='text'], input[type='number'] {
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.canvas-container {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.winner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.winner-container button {
+    width: 10%;
+    min-width: 100px;
+    margin: 10px;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.add-option-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#optionname {
+    width: 60%;
+}
+
+#optionamount {
+    width: 25%;
+    margin: 0 5px 0;
+}
+
+.option-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.option-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    border: 1px dashed grey;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.color-span {
+    width: 24px;
+    height: 24px;
+    background-color: cadetblue;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.option-name {
+    flex: 10;
+}
+
+.amount-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.amount-buttons-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.amount-buttons-container > input {
+    max-width: 100px;
+}
+
+.amount-buttons-container > button {
+    margin: 0 10px 0;
+}
+
+@media screen and (max-width: 567px) {
+    canvas {
+        width: 95vw;
+    }
+}
